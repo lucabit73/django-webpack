@@ -37,6 +37,9 @@ configure: https://eslint.org/docs/latest/user-guide/configuring/rules#configuri
 frontend/.stylelintrc.json
 configure: https://stylelint.io/user-guide/configure
 
+- stats su build:
+frontend/assets/webpack-stats.json
+
 - impostazioni lint:
 dopo "npm rum start" vengono generati in uotput alcuni log con info sui warning o error con indicazioni della rule specifica, es.
 WARNING in src/styles/index.scss
