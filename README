@@ -1,0 +1,28 @@
+https://www.accordbox.com/blog/setup-webpack-project-django/
+
+- start:
+cd django_webpack
+python3 -m venv env
+source env/bin/activate
+pip install -r requirements.txt
+? env/bin/django-admin.py startproject django_webpack_app .
+? ./manage.py migrate
+./manage.py runserver
+
+- far partire webpack:
+cd frontend
+npm rum start
+
+- creare build:
+cd frontend
+npm run build
+
+- lanciare eslint per stile:
+cd frontend
+npm run lint:styles
+
+- lanciare eslint per stile con fix:
+cd frontend
+npm run lintfix:styles
+
+- lancia django:

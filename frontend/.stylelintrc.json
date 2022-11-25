@@ -1,0 +1,27 @@
+{
+  "extends": "stylelint-config-standard",
+  "rules": {
+    "block-no-empty": [
+      true,
+      {
+        "severity": "warning"
+      }
+    ],
+    "no-eol-whitespace": null,
+    "no-missing-end-of-source-newline": null,
+    "max-empty-lines": [
+      1,
+      {
+        "severity": "warning",
+        "disableFix": true
+      }
+    ],
+    "block-opening-brace-space-before": [
+      "always",
+      {
+        "severity": "warning"
+      }
+    ],
+    "indentation": null
+  }
+}
