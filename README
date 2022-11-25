@@ -1,4 +1,5 @@
 https://www.accordbox.com/blog/setup-webpack-project-django/
+con varie modifiche...
 
 - start:
 cd django_webpack
@@ -26,3 +27,24 @@ cd frontend
 npm run lintfix:styles
 
 - lancia django:
+./manage.py runserver
+
+- impostazioni eslint:
+frontend/.eslintrc
+configure: https://eslint.org/docs/latest/user-guide/configuring/rules#configuring-rules
+
+-impostazioni stylelint:
+frontend/.stylelintrc.json
+configure: https://stylelint.io/user-guide/configure
+
+- impostazioni lint:
+dopo "npm rum start" vengono generati in uotput alcuni log con info sui warning o error con indicazioni della rule specifica, es.
+WARNING in src/styles/index.scss
+ 25:3  ⚠  Unexpected empty block              block-no-empty 
+ 29:1  ⚠  Expected no more than 1 empty line  max-empty-lines
+Qui possiamo googlare ad esempio "block-no-empty stylelint"
+Mentre per js.
+WARNING in 
+/home/upup/code/django_webpack/frontend/src/scripts/index.js
+  10:25  warning  Missing semicolon  semi
+Si googla "semi rules eslint"
