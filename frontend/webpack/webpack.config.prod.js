@@ -15,7 +15,7 @@ module.exports = merge(common, {
     new Webpack.DefinePlugin({
       'process.env.NODE_ENV': JSON.stringify('production'),
     }),
-    new MiniCssExtractPlugin({filename: 'css/app.css',}),
+    new MiniCssExtractPlugin({filename: 'css/[name].css',}),
   ],
   module: {
     rules: [
