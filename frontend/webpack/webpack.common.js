@@ -2,6 +2,7 @@ const Path = require('path');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const BundleTracker = require('webpack-bundle-tracker');
 
 module.exports = {
   entry: {
@@ -25,6 +26,10 @@ module.exports = {
     }),
     new HtmlWebpackPlugin({
       template: Path.resolve(__dirname, '../src/index.html'),
+    }),
+    new BundleTracker({
+      path: __dirname,
+      filename: './assets/webpack-stats.json',
     }),
   ],
   resolve: {
