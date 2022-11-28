@@ -1,9 +1,9 @@
-import '../styles/index.scss';
+// import '../styles/index.scss';
 // asdadwer
-console.log('webpack starterkit');
+console.log('webpack starterkit au');
 
-import $ from "jquery/dist/jquery.slim";
-import "bootstrap/dist/js/bootstrap.bundle";
+// import $ from "jquery/dist/jquery.slim";
+// import "bootstrap/dist/js/bootstrap.bundle";
 
 $(document).ready(function () {
     const message = 'Hello, World!';
